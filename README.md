@@ -3,7 +3,7 @@
     To install and run it do the following :
     
     
- pkg install php -y
- git clone https://github .com/imdimd/imd
- cd imd
- php imd.php
+     $pkg install php -y
+     $git clone https://github .com/imdimd/imd
+     $cd imd
+     $php imd.php
