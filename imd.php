@@ -6,6 +6,9 @@ $nexphisher="nexphisher";
 $zphisher="zphisher";
 $ngrok="ngrok";
 $Tbomb="Tbomb";
+$phoneinfoga='PhoneInfoga';
+$IPGeoLocation='IPGeoLocation';
+$CyberScan='CyberScan';
 echo  "\e[0m\e[92m   ____    __   __    _ _     \e[0m\n";
 echo  "\e[0m\e[92m  |_  _|  |  \_/  |  |  _ \   \e[0m\n";
 echo  "\e[0m\e[92m    ||    | |\_/| |  | | | |  \e[0m\n";
@@ -20,14 +23,16 @@ echo  "     \e[1;31m[\e[0m\e[1;77m03\e[0m\e[1;31m]\e[0m\e[1;93m nexphisheer \n";
 echo  "     \e[1;31m[\e[0m\e[1;77m04\e[0m\e[1;31m]\e[0m\e[1;93m ngrok \n";
 echo  "     \e[1;31m[\e[0m\e[1;77m05\e[0m\e[1;31m]\e[0m\e[1;93m Tbomb \n";
 echo  "     \e[1;31m[\e[0m\e[1;77m06\e[0m\e[1;31m]\e[0m\e[1;93m zphisher \e[0m\n";
+echo  "     \e[1;31m[\e[0m\e[1;77m07\e[0m\e[1;31m]\e[0m\e[1;93m phoneinfoga \e[0m\n";
+echo  "     \e[1;31m[\e[0m\e[1;77m08\e[0m\e[1;31m]\e[0m\e[1;93m IPgeolocation \e[0m\n";
+echo  "     \e[1;31m[\e[0m\e[1;77m09\e[0m\e[1;31m]\e[0m\e[1;93m CyberScan \e[0m\n";
 echo "\n";
 $tool=readline("  the number of the tool you want install  : ");
 echo "\n";
 
 if ($tool==1) {
     if (is_dir($shellphish) === true) {
-        shell_exec('rm -fr shellphish');
-        shell_exec('git clone https://github.com/suljot/shellphish');
+        echo "  \e[31m This tool is already installed \e[0m\n\n\n";
         
     }
     else {
@@ -36,8 +41,7 @@ if ($tool==1) {
 }
 elseif($tool==2) {
     if (is_dir($CamPhish) === true) {
-        shell_exec('rm -fr CamPhish');
-        shell_exec('git clone https://github.com/techchipnet/CamPhish');
+        echo "  \e[31m This tool is already installed \e[0m\n\n\n";
     }   
     else {
         shell_exec('git clone https://github.com/techchipnet/CamPhish');
@@ -46,8 +50,7 @@ elseif($tool==2) {
 }
 elseif ($tool==3) {
     if (is_dir($nexphisher) === true) {
-        shell_exec('rm -fr nexphisher');
-        shell_exec('git clone https://github.com/htr-tech/nexphisher ');
+        echo "  \e[31m This tool is already installed \e[0m\n\n\n";
         
     }
     else {
@@ -57,8 +60,7 @@ elseif ($tool==3) {
 }
 elseif ($tool==4) {
         if (is_dir($ngrok) === true) {
-            shell_exec('rm -fr ');
-            shell_exec('git clone https://github.com/imdimd/ngrok');
+            echo "  \e[31m This tool is already installed \e[0m\n\n\n";
             
         }
         else{
@@ -67,8 +69,7 @@ elseif ($tool==4) {
 }
 elseif ($tool==5) {
     if (is_dir($Tbomb) === true) {
-        shell_exec('rm -fr Tbomb');
-        shell_exec('git clone https://github.com/TheSpeedX/TBomb');
+        echo "  \e[31m This tool is already installed \e[0m\n\n\n";
         
     }
     else{
@@ -77,12 +78,44 @@ elseif ($tool==5) {
 }
 elseif ($tool==6) {
     if (is_dir($zphisher) === true) {
-        shell_exec('rm -fr zphisher');
-        shell_exec('rm -fr git clone git://github.com/htr-tech/zphisher'); 
+        echo "  \e[31m This tool is already installed \e[0m\n\n\n";
         
     }
     else {
-        shell_exec('rm -fr git clone git://github.com/htr-tech/zphisher'); 
+        shell_exec('git clone git://github.com/htr-tech/zphisher'); 
+    }
+
+    
+}
+elseif ($tool==7) {
+    if (is_dir($phoneinfoga) === true) {
+        echo "  \e[31m This tool is already installed \e[0m\n\n\n";
+        
+    }
+    else {
+        shell_exec('git clone https://github.com/ExpertAnonymous/PhoneInfoga'); 
+    }
+
+    
+}
+elseif ($tool==8) {
+    if (is_dir($phoneinfoga) === true) {
+        echo "  \e[31m This tool is already installed \e[0m\n\n\n"; 
+        
+    }
+    else {
+        shell_exec('git clone https://github.com/maldevel/IPGeoLocation'); 
+    }
+
+    
+}
+elseif ($tool==9 ) {
+    if (is_dir($CyberScan) === true) {
+        echo "  \e[31m This tool is already installed \e[0m\n\n\n"; 
+        
+    }
+    else {
+        shell_exec('git clone https://github.com/medbenali/CyberScan'); 
     }
 
     
